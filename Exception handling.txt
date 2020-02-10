@@ -1,0 +1,176 @@
+#
+'''
+def add(n,m):
+    print(n+m)
+    '''
+
+#CHECK IF IT IS AN "EXCEPTION"------------------
+
+'''
+print("start")
+a=int(input("num1:"))
+b=int(input("num2:"))
+try:
+    print(a/b)
+except:
+    print("enter valid number:")'''
+
+# TO PRINT EXCEPTION----------------------------
+
+'''
+print("start")
+a=10
+b=0
+try:
+    print(a/b)
+except Exception as e:
+    print(e)
+'''
+
+#MULTIPLE EXCCEPTION HANDLER---------------------
+
+'''
+print("start")
+try:
+    a=[10,20]
+    a[9]=89
+except ZeroDivisionError:
+    print("jkjgfjfl")
+except Exception as a:
+    print(a)
+print("end")
+#multiple exception handlers can be used in one try block'''
+
+
+#
+
+'''
+print("start")
+a=10
+b=0
+try:
+    print(a/b)
+    try:
+        b>a
+    except:
+        print("enter correct value")
+except Exception as r:
+    print(r)
+'''
+
+
+#MULTILE TRY----------------------------------------
+
+'''    
+print("start")
+a=int(input("num1:"))
+b=int(input("num2:"))
+try:
+    print(a/b)                 #if this try block is true then only net block will be executed 
+    try:
+        a=[10,20]              #else output of first block will be printed
+        a[9]=89
+    except ZeroDivisionError:
+        print("jkjgfjfl")
+except Exception as a:
+    print(a)
+print("end")
+    '''
+
+#
+
+'''
+try:
+    result=10+10
+except:
+    print("addition done")
+else:
+    print("done well")
+    print(result)'''
+
+#
+'''
+try:
+    result=10+'10'
+except:
+    print("ENTER VALID VALUE")         
+else:
+    print("done well")
+    print(result)'''
+
+#FINALLY WILL ALWAYS BE EXECUTED WHILE TRY BLOCK WILL EXECUTE ONLY WHEN ERROR IS PRESNT
+
+
+#
+'''
+try:
+    result=10+'10'
+except:
+    print("ENTER VALID VALUE")         
+else:
+    print("done well")
+    print(result)
+finally:
+    print("finally block")
+    '''
+#
+
+'''
+try:
+    result=10+'10'
+except Exception as r:   #exception executed 
+    print(r)                 
+except:
+    print("ENTER VALID VALUE")  #if one exception is executed then other one will not execute        
+else:
+    print("done well")
+    print(result)
+finally:
+    print("finally block!!")
+'''
+
+#
+
+'''def ask_for_val():
+    try:
+        result=int(input("enter the value:"))
+    except Exception as r:
+        print(r)
+        
+        #print("not an integer")
+    finally:
+        print("end!")
+ask_for_val()   '''     
+
+
+#
+'''
+def ask_for_val():
+    try:
+        result=int(input("enter the value:"))
+    except Exception as r:
+        print(r)
+        #print("not an integer")
+    else:
+        print("it's an integer")
+    finally:
+        print("end!")'''
+
+#
+'''
+def inr():
+    flag=0
+    while(flag!=1):
+        a=input("enter the value:")
+        try:
+            int(a)
+        except ValueError:
+            print("not a number")
+        else:
+            print("Entered value:",a)
+            flag=1  '''
+
+#
+
+
+            
